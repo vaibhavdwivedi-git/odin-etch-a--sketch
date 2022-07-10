@@ -5,8 +5,34 @@
         <title>Etch-a-Sketch</title>
         <script src="./script.js" defer></script>
         <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+
+        <div id="header">
+            <div id="title">Etch-a-sketch</div>
+        </div>
+
+        <div id="content">
+            <div id="setting">
+                <div id="colorselector"></div>
+                <div id="colorMode" class="btn active" >Color Mode</div>
+                <div id="rainbowMode" class="btn">Rainbow Mode</div>
+                <div id="eraser" class="btn">Eraser</div>
+                <div id="clear" class="btn">Clear</div>
+                <div id="sizeselector"> 
+                    <div>16 X 16</div>
+                    <input type="range" min="1" max="64" value="16" class="slider">
+                </div>
+            </div>
+            <div id="canvas"></div>
+        </div>
+
+        <div id="footer">
+            <div>Copyright © 2022 xhistr</div>
+            <a href=""><i class="fa fa-github" style="font-size:32px;color:black"></i></a>
+        </div>
 
     </body>
 </html>
